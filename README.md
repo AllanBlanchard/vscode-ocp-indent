@@ -18,3 +18,7 @@ Basically: the same key binding can be used for both actions.
 
 - `ocp-indent` (`opam install ocp-indent`)
 
+## Build package
+
+- npm install
+- vsce package
