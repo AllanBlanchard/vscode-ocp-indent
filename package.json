@@ -3,7 +3,7 @@
   "displayName": "OcpIndent",
   "description": "Provide OCP Indent in VSCode",
   "version": "0.0.2",
-  "publisher": "Allan Blanchard",
+  "publisher": "PeukDev",
   "engines": {
     "vscode": "^1.53.0"
   },
