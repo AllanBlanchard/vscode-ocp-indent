@@ -22,6 +22,11 @@
           "type": "boolean",
           "default": false,
           "description": "On global format, if something is selected, only format selection"
+        },
+        "ocpIndent.path": {
+          "type": "string",
+          "default": "",
+          "description": "Path to OCP-Indent, just use 'ocp-indent' command"
         }
       }
     }

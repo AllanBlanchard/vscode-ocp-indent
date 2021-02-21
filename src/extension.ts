@@ -1,18 +1,25 @@
 import * as vscode from 'vscode';
 import { existsSync } from 'fs';
+import { cpuUsage } from 'process';
 
 function globalFormatSelection(): boolean {
 	const config = vscode.workspace.getConfiguration().get('ocpIndent.globalFormatTakesSelection');
 	if (config) { return true; }
 	else { return false; }
 }
-
-function isOcaml(languageId: string) {
-	return languageId === 'ocaml' || languageId === 'ocaml.interface';
+function ocpIndentPath(): string {
+	const config = vscode.workspace.getConfiguration().get('ocpIndent.path');
+	if (config) { return String(config); }
+	else { return ""; }
 }
 
 function ocpCommand() {
-	return 'ocp-indent --inplace';
+	const path = ocpIndentPath();
+	if (path === ""){
+		return 'ocp-indent --inplace';
+	} else {
+		return path + ' --inplace';
+	}
 }
 
 function executeOcpIndent(document: vscode.TextDocument, option: string) {
@@ -52,6 +59,10 @@ function doIndentZone(document: vscode.TextDocument, range: any) {
 		}
 	}
 	executeOcpIndent(document, optionLines);
+}
+
+function isOcaml(languageId: string) {
+	return languageId === 'ocaml' || languageId === 'ocaml.interface';
 }
 
 function indentRange(document: vscode.TextDocument, range: any) {
