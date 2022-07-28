@@ -42,7 +42,7 @@ function executeOcpIndent(document: vscode.TextDocument, option: string) {
 function makeOptionRange({ start, end }: vscode.Range) {
 	let result = "";
 	if (start.line !== end.line || start.character !== end.character) {
-		result = ' -l ' + start.line + '-' + end.line;
+		result = ' -l ' + (start.line + 1) + '-' + (end.line + 1);
 	}
 	return result;
 }
