@@ -13,7 +13,7 @@ function ocpIndentPath(): string {
 
 function ocpCommand() {
 	const path = ocpIndentPath();
-	if (path === ""){
+	if (path === "") {
 		return 'ocp-indent';
 	} else {
 		return path;
@@ -46,7 +46,7 @@ function doIndentZone(document: vscode.TextDocument, range: any): string | undef
 	}
 	else if (globalFormatSelection()) {
 		let editor = vscode.window.activeTextEditor;
-		if (editor) {
+		if (editor && editor.selection.start.isBefore(editor.selection.end)) {
 			optionLines = makeOptionRange(editor.selection);
 		}
 	}
