@@ -2,7 +2,7 @@
   "name": "ocp-indent",
   "displayName": "OcpIndent",
   "description": "Provide OCP Indent in VSCode",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "publisher": "AllanBlanchard",
   "repository": {
     "url": "https://github.com/AllanBlanchard/vscode-ocp-indent"
