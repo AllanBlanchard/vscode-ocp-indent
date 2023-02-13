@@ -30,7 +30,7 @@ function executeOcpIndent(document: vscode.TextDocument, args: string[]): string
 	const cp = require('child_process');
 	const { stdout, stderr, error } = cp.spawnSync(cmd, args, options);
 	if (stderr) { vscode.window.showErrorMessage(stderr); }
-	if (error) { vscode.window.showErrorMessage(error); }
+	if (error) { vscode.window.showErrorMessage(error.message); }
 	const output = error || stderr ? undefined : stdout;
 	return output;
 }
