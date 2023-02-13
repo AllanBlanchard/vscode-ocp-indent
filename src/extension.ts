@@ -42,7 +42,7 @@ function getCwd(document: vscode.TextDocument): string | undefined {
 function executeOcpIndent(document: vscode.TextDocument, args: string[]): string | undefined {
 	const cmd = ocpCommand();
 	const text = document.getText();
-	const cwd =	getCwd(document);
+	const cwd = getCwd(document);
 	const options = {
 		input: text,
 		encoding: 'utf8',
