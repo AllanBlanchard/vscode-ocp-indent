@@ -2,7 +2,7 @@
   "name": "ocp-indent",
   "displayName": "OcpIndent",
   "description": "Provide OCP Indent in VSCode",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "AllanBlanchard",
   "repository": {
     "url": "https://github.com/AllanBlanchard/vscode-ocp-indent"
@@ -52,7 +52,7 @@
     "@typescript-eslint/parser": "^4.14.1",
     "eslint": "^7.19.0",
     "glob": "^7.1.6",
-    "mocha": "^8.2.1",
+    "mocha": "^10.2.0",
     "typescript": "^4.1.3",
     "vscode-test": "^1.5.0"
   }

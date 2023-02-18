@@ -1,5 +1,9 @@
 # Change Log
 
+## Upcoming
+
+- Set the current working directory in order to use .ocp-indent file settings ([@mlasson](https://github.com/mlasson))
+
 ## [0.2]
 
 - Changes communication with `ocp-indent` (more robust)
