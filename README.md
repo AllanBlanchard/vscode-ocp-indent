@@ -2,7 +2,7 @@
 
 ## Features
 
-Provides OCP indent formatting for Ocaml.
+Provides OCP indent formatting for OCaml.
 
 - full file formatting
 - selected text formatting
