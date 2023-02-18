@@ -1,8 +1,8 @@
 # Change Log
 
-## Upcoming
+## [0.3]
 
-- Set the current working directory in order to use .ocp-indent file settings ([@mlasson](https://github.com/mlasson))
+- Set the current working directory in order to use `.ocp-indent` file settings (Thanks [@mlasson](https://github.com/mlasson)!)
 
 ## [0.2]
 
